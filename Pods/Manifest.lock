@@ -1,0 +1,30 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - LHPlayStar (1.0.2)
+  - Masonry (0.6.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - LHPlayStar
+  - Masonry
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  LHPlayStar: bfb7a216503ffe01f80fd1517282fd5ea37fd3ed
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+
+COCOAPODS: 0.39.0
