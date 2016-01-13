@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6BE4E726F48631ECA100B6E2A982C13EE1B9659A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "16603EB1FE19448030128EC66461F151F703C17A" : 0,
+    "6BE4E726F48631ECA100B6E2A982C13EE1B9659A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "105A5080-D5E4-47C2-93A5-89CB55A05C7E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "16603EB1FE19448030128EC66461F151F703C17A" : "",
+    "6BE4E726F48631ECA100B6E2A982C13EE1B9659A" : "TestProduct\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LHTestProduct",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LHTestProduct.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yutiandesan\/starstar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "16603EB1FE19448030128EC66461F151F703C17A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yutiandesan\/TestProduct",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6BE4E726F48631ECA100B6E2A982C13EE1B9659A"
+    }
+  ]
+}
