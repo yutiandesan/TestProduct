@@ -18,7 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor redColor];
+    
+    UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"支付失败，请重新支付！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
     
 }
 
