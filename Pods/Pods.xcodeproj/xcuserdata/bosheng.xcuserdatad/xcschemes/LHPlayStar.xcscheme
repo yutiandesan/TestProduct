@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0C685A9EAB5F784B7C37C4B3863591D"
+               BlueprintIdentifier = "7A84259F14006D48950B79F9056D8631"
                BuildableName = "libLHPlayStar.a"
                BlueprintName = "LHPlayStar"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0C685A9EAB5F784B7C37C4B3863591D"
+            BlueprintIdentifier = "7A84259F14006D48950B79F9056D8631"
             BuildableName = "libLHPlayStar.a"
             BlueprintName = "LHPlayStar"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0C685A9EAB5F784B7C37C4B3863591D"
-            BuildableName = "libLHPlayStar.a"
-            BlueprintName = "LHPlayStar"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

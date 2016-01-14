@@ -6,43 +6,63 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>LHPlayStar.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>053147122A1A2708DE576FDC8FA27470</key>
+		<key>01B12019C57A80850C122A6A5CB2DC1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<key>1661F8607401FA7D5CD6E01EE4519C8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>19E66028F036225678996D457A14D070</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0C685A9EAB5F784B7C37C4B3863591D</key>
+		<key>7A84259F14006D48950B79F9056D8631</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D37DFB8121D90AA443DEA305DD054864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7FDFC75A11C0ADD89176EC455F2FA10</key>
 		<dict>
 			<key>primary</key>
 			<true/>

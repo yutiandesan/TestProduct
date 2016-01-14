@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53480ED0BE09FF49E34B1702D485CAAB"
+               BlueprintIdentifier = "D7FDFC75A11C0ADD89176EC455F2FA10"
                BuildableName = "libMasonry.a"
                BlueprintName = "Masonry"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53480ED0BE09FF49E34B1702D485CAAB"
+            BlueprintIdentifier = "D7FDFC75A11C0ADD89176EC455F2FA10"
             BuildableName = "libMasonry.a"
             BlueprintName = "Masonry"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53480ED0BE09FF49E34B1702D485CAAB"
-            BuildableName = "libMasonry.a"
-            BlueprintName = "Masonry"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

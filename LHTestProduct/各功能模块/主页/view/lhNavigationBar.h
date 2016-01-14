@@ -1,0 +1,23 @@
+//
+//  lhNavigationBar.h
+//  LHTestProduct
+//
+//  Created by bosheng on 16/1/14.
+//  Copyright © 2016年 liuhuan. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@protocol rightBtnDelegate <NSObject>
+
+- (void)rightBtnEvent;//导航栏右按钮事件
+
+@end
+
+@interface lhNavigationBar : UIView
+
+@property (nonatomic,assign)id<rightBtnDelegate> delegate;
+
+- (instancetype)initWithVC:(UIViewController *)tempVC title:(NSString *)titleStr isBackBtn:(BOOL)yesOrNo rightBtn:(NSString *)tStr;
+
+@end
