@@ -9,6 +9,14 @@
 #ifndef Defines_h
 #define Defines_h
 
+//请求链接
+#pragma mark - 正式
+//#define webUrl @"http://api.up-oil.com"
+//#define WXWebUrl @"http://wx.up-oil.com"
+#pragma mark - 测试
+#define webUrl @"http://123.57.233.24:81"
+#define WXWebUrl @"http://wx.bs-innotech.com"
+
 //tag值1000一下用于已知数目控件设置tag值，1000以上用于设置位置数目控件的tag值
 #define backBtnTag 999
 #define navigationBarTitleTag 998
@@ -36,7 +44,8 @@
 #define viewColor [UIColor colorFromHexRGB:@"EBEBEB"] //背景色 浅灰色
 #define buttonColor [UIColor colorFromHexRGB:@"aaaaaa"]
 
-
+//请求后台固定签名串
+#define OurRequestSignStr @"0581d9c5e04218f5bc5eed0bcde1cc89cc8d1798"
 
 
 #endif /* Defines_h */

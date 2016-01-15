@@ -10,26 +10,35 @@
 
 @interface lhUserModel : NSObject
 
-@property(nonatomic,copy)NSString *regType;
-@property(nonatomic,copy)NSString *discount_rate;
-@property(nonatomic,copy)NSString *icon;
-@property(nonatomic,copy)NSString *item_id;
-@property(nonatomic,copy)NSString *item_state;
-@property(nonatomic,copy)NSString *market_price;
-@property(nonatomic,copy)NSString *name;
-@property(nonatomic,copy)NSString *name_add;
-@property(nonatomic,copy)NSString *resell_item_sale_state;
-@property(nonatomic,copy)NSString *resell_item_state;
-@property(nonatomic,copy)NSString *sale_price;
-@property(nonatomic,copy)NSString *sale_state;
-@property(nonatomic,copy)NSString *shop_item_state;
-@property(nonatomic,copy)NSString *shop_item_sale_state;
-@property(nonatomic,copy)NSString *full_name;
-@property(nonatomic,copy)NSString *miya_point;
-@property(nonatomic,copy)NSString *relate_flag;
-@property(nonatomic,copy)NSString *unit;
-@property(nonatomic,copy)NSString *origin;
-@property(nonatomic,copy)NSString *desc_text;
-@property(nonatomic,copy)NSString *brand_name;
+@property(nonatomic,copy)NSString *balance;
+@property(nonatomic,copy)NSString *carnum;
+@property(nonatomic,copy)NSString *city;
+@property(nonatomic,copy)NSString *consumeMoney;
+@property(nonatomic,copy)NSString *consumenum;
+@property(nonatomic,copy)NSString *gender;
+@property(nonatomic,copy)NSString *headURL;
+@property(nonatomic,copy)NSString *id;
+@property(nonatomic,copy)NSString *integral;
+@property(nonatomic,copy)NSString *invitationCode;
+@property(nonatomic,copy)NSString *invitedCode;
+@property(nonatomic,copy)NSString *invoiceTitle;
+@property(nonatomic,copy)NSString *isFirstGas;
+@property(nonatomic,copy)NSString *loginTime;
+@property(nonatomic,copy)NSString *mark;
+@property(nonatomic,copy)NSString *messageCount;
+@property(nonatomic,copy)NSString *nickname;
+@property(nonatomic,copy)NSString *oiltype;
+@property(nonatomic,copy)NSString *payMoney;
+@property(nonatomic,copy)NSString *payPass;
+@property(nonatomic,copy)NSString *realname;
+@property(nonatomic,copy)NSString *saveMoney;
+@property(nonatomic,copy)NSString *signature;
+@property(nonatomic,copy)NSString *token;
+@property(nonatomic,copy)NSString *useFingerPass;
+@property(nonatomic,copy)NSString *usePass;
+@property(nonatomic,copy)NSString *username;
+@property(nonatomic,copy)NSString *voucherDiscountMoney;
+
+//- (instancetype)initWithDictionary:(NSDictionary *)jsonObject;
 
 @end

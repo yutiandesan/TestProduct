@@ -7,7 +7,8 @@
 //
 
 #import "lhMainViewController.h"
-#import "lhRequestDataUseAFNetworking.h"
+#import "lhMainViewModel.h"
+#import "lhLoginViewController.h"
 
 @interface lhMainViewController ()<rightBtnDelegate>
 
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [lhMainViewModel checkNetworkStatus];
     // Do any additional setup after loading the view.
     self.navigationController.navigationBar.hidden = YES;
     self.view.backgroundColor = [UIColor whiteColor];
@@ -25,10 +27,12 @@
     nb.delegate = self;
     [self.view addSubview:nb];
     
+    [lhMainViewModel autoLoginSuccess:^(lhLoginModel *user) {
+        
+    } fail:^{
+        
+    }];
     
-    [[lhRequestDataUseAFNetworking alloc]checkNetworkStatus];
-    
-//    lhRequestDataUseAFNetworking JSONDataWithUrl:<#(NSString *)#> success:<#^(id json)success#> fail:<#^(void)fail#>
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +43,8 @@
 - (void)rightBtnEvent
 {
     NSLog(@"下一页");
+    
+    
 }
 
 /*

@@ -10,4 +10,22 @@
 
 @implementation lhUserModel
 
+//- (instancetype)initWithDictionary:(NSDictionary *)jsonObject
+//{
+//    if (self = [super init]) {
+//
+//        [self setValuesForKeysWithDictionary:jsonObject];
+//        
+//    }
+//    
+//    return self;
+//}
+//
+//- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+//{
+//    if ([@"id" isEqualToString:key]) {
+//        self.userId = value;
+//    }
+//}
+
 @end
