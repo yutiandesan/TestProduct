@@ -22,7 +22,10 @@
 		D06AE9051C4890EE008F6A8F /* MyMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9041C4890EE008F6A8F /* MyMD5.m */; };
 		D06AE9081C48D045008F6A8F /* lhLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9071C48D045008F6A8F /* lhLoginModel.m */; };
 		D06AE90B1C48D0CC008F6A8F /* lhMainShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE90A1C48D0CC008F6A8F /* lhMainShowModel.m */; };
-		D06AE9161C48D917008F6A8F /* lhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9121C48D917008F6A8F /* lhLoginViewController.m */; };
+		D06AE9211C48EDC7008F6A8F /* lhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE91D1C48EDC7008F6A8F /* lhLoginViewController.m */; };
+		D06AE9241C48EE28008F6A8F /* lhLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9231C48EE28008F6A8F /* lhLoginView.m */; };
+		D06AE9271C48F4E2008F6A8F /* lhValidateCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9261C48F4E2008F6A8F /* lhValidateCodeModel.m */; };
+		D06AE92A1C48F683008F6A8F /* lhLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9291C48F683008F6A8F /* lhLoginViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +72,14 @@
 		D06AE9071C48D045008F6A8F /* lhLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhLoginModel.m; sourceTree = "<group>"; };
 		D06AE9091C48D0CC008F6A8F /* lhMainShowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhMainShowModel.h; sourceTree = "<group>"; };
 		D06AE90A1C48D0CC008F6A8F /* lhMainShowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhMainShowModel.m; sourceTree = "<group>"; };
-		D06AE9111C48D917008F6A8F /* lhLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhLoginViewController.h; sourceTree = "<group>"; };
-		D06AE9121C48D917008F6A8F /* lhLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhLoginViewController.m; sourceTree = "<group>"; };
+		D06AE91C1C48EDC7008F6A8F /* lhLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhLoginViewController.h; sourceTree = "<group>"; };
+		D06AE91D1C48EDC7008F6A8F /* lhLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhLoginViewController.m; sourceTree = "<group>"; };
+		D06AE9221C48EE28008F6A8F /* lhLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhLoginView.h; sourceTree = "<group>"; };
+		D06AE9231C48EE28008F6A8F /* lhLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhLoginView.m; sourceTree = "<group>"; };
+		D06AE9251C48F4E2008F6A8F /* lhValidateCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhValidateCodeModel.h; sourceTree = "<group>"; };
+		D06AE9261C48F4E2008F6A8F /* lhValidateCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhValidateCodeModel.m; sourceTree = "<group>"; };
+		D06AE9281C48F683008F6A8F /* lhLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhLoginViewModel.h; sourceTree = "<group>"; };
+		D06AE9291C48F683008F6A8F /* lhLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhLoginViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +174,7 @@
 		D05E62551C47777700811927 /* 各功能模块 */ = {
 			isa = PBXGroup;
 			children = (
-				D06AE90C1C48D8B7008F6A8F /* 登录 */,
+				D06AE91A1C48EDC7008F6A8F /* 登录修改绑定账号 */,
 				D05E62561C47777700811927 /* 主页 */,
 			);
 			path = "各功能模块";
@@ -268,43 +277,49 @@
 			path = "MD5加密";
 			sourceTree = "<group>";
 		};
-		D06AE90C1C48D8B7008F6A8F /* 登录 */ = {
+		D06AE91A1C48EDC7008F6A8F /* 登录修改绑定账号 */ = {
 			isa = PBXGroup;
 			children = (
-				D06AE9101C48D917008F6A8F /* controller */,
-				D06AE9131C48D917008F6A8F /* model */,
-				D06AE9141C48D917008F6A8F /* view */,
-				D06AE9151C48D917008F6A8F /* viewModel */,
+				D06AE91B1C48EDC7008F6A8F /* controller */,
+				D06AE91E1C48EDC7008F6A8F /* model */,
+				D06AE91F1C48EDC7008F6A8F /* view */,
+				D06AE9201C48EDC7008F6A8F /* viewModel */,
 			);
-			path = "登录";
+			path = "登录修改绑定账号";
 			sourceTree = "<group>";
 		};
-		D06AE9101C48D917008F6A8F /* controller */ = {
+		D06AE91B1C48EDC7008F6A8F /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				D06AE9111C48D917008F6A8F /* lhLoginViewController.h */,
-				D06AE9121C48D917008F6A8F /* lhLoginViewController.m */,
+				D06AE91C1C48EDC7008F6A8F /* lhLoginViewController.h */,
+				D06AE91D1C48EDC7008F6A8F /* lhLoginViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
 		};
-		D06AE9131C48D917008F6A8F /* model */ = {
+		D06AE91E1C48EDC7008F6A8F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D06AE9251C48F4E2008F6A8F /* lhValidateCodeModel.h */,
+				D06AE9261C48F4E2008F6A8F /* lhValidateCodeModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
-		D06AE9141C48D917008F6A8F /* view */ = {
+		D06AE91F1C48EDC7008F6A8F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D06AE9221C48EE28008F6A8F /* lhLoginView.h */,
+				D06AE9231C48EE28008F6A8F /* lhLoginView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
 		};
-		D06AE9151C48D917008F6A8F /* viewModel */ = {
+		D06AE9201C48EDC7008F6A8F /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D06AE9281C48F683008F6A8F /* lhLoginViewModel.h */,
+				D06AE9291C48F683008F6A8F /* lhLoginViewModel.m */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -454,14 +469,17 @@
 				D06AE90B1C48D0CC008F6A8F /* lhMainShowModel.m in Sources */,
 				D06AE9051C4890EE008F6A8F /* MyMD5.m in Sources */,
 				6EB714A51C415FEA0014D4A0 /* AppDelegate.m in Sources */,
+				D06AE92A1C48F683008F6A8F /* lhLoginViewModel.m in Sources */,
 				D06AE9011C488B35008F6A8F /* lhMainViewModel.m in Sources */,
 				D05E62641C477A6600811927 /* lhNavigationBar.m in Sources */,
 				D05E62691C47802900811927 /* UIColor+lhColor.m in Sources */,
 				6EB714A21C415FEA0014D4A0 /* main.m in Sources */,
+				D06AE9241C48EE28008F6A8F /* lhLoginView.m in Sources */,
 				D05E62711C47982200811927 /* lhUserModel.m in Sources */,
 				D06AE9081C48D045008F6A8F /* lhLoginModel.m in Sources */,
 				D05E62601C47779800811927 /* lhMainViewController.m in Sources */,
-				D06AE9161C48D917008F6A8F /* lhLoginViewController.m in Sources */,
+				D06AE9211C48EDC7008F6A8F /* lhLoginViewController.m in Sources */,
+				D06AE9271C48F4E2008F6A8F /* lhValidateCodeModel.m in Sources */,
 				D05E62741C479AE300811927 /* lhRequestDataUseAFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

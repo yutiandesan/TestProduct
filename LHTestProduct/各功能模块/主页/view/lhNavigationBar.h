@@ -15,6 +15,9 @@
 @end
 
 @interface lhNavigationBar : UIView
+{
+    UIViewController * tempVC;
+}
 
 @property (nonatomic,assign)id<rightBtnDelegate> delegate;
 

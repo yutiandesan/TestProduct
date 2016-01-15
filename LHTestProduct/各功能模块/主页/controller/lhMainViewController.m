@@ -44,7 +44,8 @@
 {
     NSLog(@"下一页");
     
-    
+    lhLoginViewController * lVC = [[lhLoginViewController alloc]init];
+    [self.navigationController pushViewController:lVC animated:YES];
 }
 
 /*

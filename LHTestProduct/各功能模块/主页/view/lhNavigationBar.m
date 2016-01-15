@@ -8,15 +8,13 @@
 
 #import "lhNavigationBar.h"
 
-static UIViewController * tempVC;
-
 @implementation lhNavigationBar
 
-- (instancetype)initWithVC:(UIViewController *)tempVC title:(NSString *)titleStr isBackBtn:(BOOL)yesOrNo rightBtn:(NSString *)tStr
+- (instancetype)initWithVC:(UIViewController *)tempV title:(NSString *)titleStr isBackBtn:(BOOL)yesOrNo rightBtn:(NSString *)tStr
 {
     self = [super initWithFrame:CGRectMake(0, 0, DeviceMaxWidth, 64)];
     if (self) {
-        tempVC = tempVC;
+        tempVC = tempV;
         self.backgroundColor = mainColor;
         [self firmInitTitle:titleStr isBackBtn:yesOrNo rightBtn:tStr];
     }
@@ -58,7 +56,7 @@ static UIViewController * tempVC;
     
 }
 
-+ (void)mergeTitle:(NSString *)titleStr
+- (void)mergeTitle:(NSString *)titleStr
 {
     UILabel * tLabel = (UILabel *)[tempVC.view viewWithTag:1999];
     tLabel.text = titleStr;
