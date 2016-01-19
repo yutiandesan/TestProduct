@@ -8,7 +8,7 @@
 
 #import "lhMainViewModel.h"
 #import "lhRequestDataUseAFNetworking.h"
-#import "MJExtension.h"
+
 
 @implementation lhMainViewModel
 

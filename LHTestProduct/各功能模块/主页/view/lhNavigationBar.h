@@ -23,4 +23,9 @@
 
 - (instancetype)initWithVC:(UIViewController *)tempVC title:(NSString *)titleStr isBackBtn:(BOOL)yesOrNo rightBtn:(NSString *)tStr;
 
+/**
+ *  显示一个提示
+ */
++ (void)showAlertWithMessage:(NSString *)message withSuperView:(UIView *)superView withHeih:(CGFloat)heih;
+
 @end

@@ -91,6 +91,8 @@
             fail();
         }
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+        //请求失败
     }];
     
 }

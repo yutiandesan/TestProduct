@@ -8,6 +8,8 @@
 
 #import "lhNavigationBar.h"
 
+static UILabel * tempLabel;
+
 @implementation lhNavigationBar
 
 - (instancetype)initWithVC:(UIViewController *)tempV title:(NSString *)titleStr isBackBtn:(BOOL)yesOrNo rightBtn:(NSString *)tStr
@@ -71,6 +73,50 @@
 {
     if ([self.delegate respondsToSelector:@selector(rightBtnEvent)]) {
         [self.delegate rightBtnEvent];
+    }
+}
+
+#pragma mark - 提示
++ (void)showAlertWithMessage:(NSString *)message withSuperView:(UIView *)superView withHeih:(CGFloat)heih
+{
+    if (!tempLabel) {
+        tempLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, heih, DeviceMaxWidth, 40)];
+        tempLabel.layer.cornerRadius = 5;
+        tempLabel.layer.allowsEdgeAntialiasing = YES;
+        tempLabel.layer.masksToBounds = YES;
+        tempLabel.backgroundColor = [UIColor blackColor];
+        tempLabel.textColor = [UIColor whiteColor];
+        tempLabel.font = [UIFont fontWithName:nowFontName size:13];
+        tempLabel.text = message;
+        tempLabel.textAlignment = NSTextAlignmentCenter;
+        
+        [tempLabel sizeToFit];
+        tempLabel.frame = CGRectMake((DeviceMaxWidth-tempLabel.frame.size.width)/2, heih, tempLabel.frame.size.width+20, 40);
+    }
+    else{
+        tempLabel.alpha = 1;
+        tempLabel.hidden = NO;
+        tempLabel.text = message;
+        
+        [tempLabel sizeToFit];
+        tempLabel.frame = CGRectMake((DeviceMaxWidth-tempLabel.frame.size.width)/2, heih, tempLabel.frame.size.width+20, 40);
+    }
+    
+    [superView addSubview:tempLabel];
+    
+    [self tempLabelDis];
+
+}
+
++ (void)tempLabelDis
+{
+    if (tempLabel) {
+        [UIView animateWithDuration:0.5 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            tempLabel.alpha = 0;
+        }completion:^(BOOL finished) {
+            [tempLabel removeFromSuperview];
+            tempLabel = nil;
+        }];
     }
 }
 

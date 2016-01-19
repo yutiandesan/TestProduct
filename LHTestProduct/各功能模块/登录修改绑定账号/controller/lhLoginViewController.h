@@ -10,4 +10,6 @@
 
 @interface lhLoginViewController : UIViewController
 
+@property (nonatomic,assign)NSInteger type;/** type=5,修改绑定账号，else 登录 */
+
 @end
