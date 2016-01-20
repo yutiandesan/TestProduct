@@ -34,7 +34,7 @@
  *parameters:提交的内容参数
  *
  */
-+ (void)postJSONWithUrl:(NSString *)urlStr parameters:(id)parameters success:(void (^)(id responseObject))success fail:(void (^)())fail;
++ (void)postJSONWithUrl:(NSString *)urlStr parameters:(id)parameters success:(void (^)(id responseObject))success;
 
 /**
  *Session下载文件

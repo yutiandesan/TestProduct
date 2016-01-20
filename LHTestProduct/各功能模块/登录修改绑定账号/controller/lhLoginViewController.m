@@ -11,9 +11,13 @@
 #import "lhValidateCodeModel.h"
 #import "lhLoginViewModel.h"
 
+#define maxCountTime 60
+
 @implementation lhLoginViewController
 {
     lhLoginView * loginView;
+    
+    NSTimer * countTimer;
 }
 
 - (void)viewDidLoad {
@@ -30,6 +34,7 @@
     [self.view addSubview:loginView];
     [loginView.validateBtn addTarget:self action:@selector(validateBtnEvent) forControlEvents:UIControlEventTouchUpInside];
     [loginView.loginBtn addTarget:self action:@selector(loginBtnEvent) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,17 +68,42 @@
         return;
     }
     
-    loginView.validateBtn.selected = YES;
-    NSLog(@"发送验证码");
-    
+    __weak UIButton * vBtn = loginView.validateBtn;
+    __weak typeof(self) weakSelf = self;
     [lhLoginViewModel getValidate:loginView.phoneTextField.text success:^(lhValidateCodeModel *user) {
+        vBtn.userInteractionEnabled = NO;
+        vBtn.backgroundColor = contentTitleColor;
+        vBtn.tag = maxCountTime;
+        vBtn.selected = YES;
+        [vBtn setTitle:[NSString stringWithFormat:@"已发送(%ds)",maxCountTime] forState:UIControlStateSelected];
         
-    } fail:^{
-        
+        if (!countTimer){
+            countTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:weakSelf selector:@selector(countTimerEvent) userInfo:nil repeats:YES];
+        }
+
     }];
     
 }
 
+#pragma mark - 倒计时
+- (void)countTimerEvent
+{
+    if (loginView.validateBtn.tag <= 1) {
+        [countTimer invalidate];
+        countTimer = nil;
+        
+        loginView.validateBtn.userInteractionEnabled = YES;
+        loginView.validateBtn.selected = NO;
+        [loginView.validateBtn setTitle:@"重新获取" forState:UIControlStateNormal];
+        loginView.validateBtn.backgroundColor = mainColor;
+    }
+    else{
+        loginView.validateBtn.tag -= 1;
+        [loginView.validateBtn setTitle:[NSString stringWithFormat:@"已发送(%lds)",(long)loginView.validateBtn.tag] forState:UIControlStateSelected];
+    }
+}
+
+#pragma mark - 登录
 - (void)loginBtnEvent
 {
     NSLog(@"登录");

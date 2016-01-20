@@ -17,7 +17,7 @@
     [lhRequestDataUseAFNetworking checkNetworkStatus];
 }
 
-+ (void)autoLoginSuccess:(void (^)(lhLoginModel * user))success fail:(void (^)())fail
++ (void)autoLoginSuccess:(void (^)(lhLoginModel * user))success
 {
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",webUrl,@"/action/applogin_login"];
     NSDictionary * infoDict = [[NSBundle mainBundle]infoDictionary];
@@ -37,10 +37,6 @@
             success(model);
         }
         
-    } fail:^{
-        if (fail) {
-            fail();
-        }
     }];
     
 }

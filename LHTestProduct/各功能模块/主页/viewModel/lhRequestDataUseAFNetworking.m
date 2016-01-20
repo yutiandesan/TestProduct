@@ -54,7 +54,7 @@
 }
 
 #pragma mark - JSON方式post提交数据
-+ (void)postJSONWithUrl:(NSString *)urlStr parameters:(id)parameters success:(void (^)(id responseObject))success fail:(void (^)())fail
++ (void)postJSONWithUrl:(NSString *)urlStr parameters:(id)parameters success:(void (^)(id responseObject))success
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -87,12 +87,14 @@
         }
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (fail) {
-            fail();
-        }
+//        if (fail) {
+//            fail();
+//        }
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
         //请求失败
+        
+        
     }];
     
 }

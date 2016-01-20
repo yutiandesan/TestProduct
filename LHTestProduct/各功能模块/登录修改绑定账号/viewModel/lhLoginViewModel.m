@@ -10,7 +10,7 @@
 
 @implementation lhLoginViewModel
 
-+ (void)getValidate:(NSString *)phoneStr success:(void (^)(lhValidateCodeModel * user))success fail:(void (^)())fail
++ (void)getValidate:(NSString *)phoneStr success:(void (^)(lhValidateCodeModel * user))success
 {
     
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",webUrl,@"/action/verification_genVerCode"];
@@ -25,16 +25,12 @@
             success(model);
         }
         
-    } fail:^{
-        if (fail) {
-            fail();
-        }
     }];
 }
 
 #pragma mark - 手机号验证
 /*手机号码验证 MODIFIED BY HELENSONG*/
-+(BOOL) isValidateMobile:(NSString *)mobile
++ (BOOL)validateMobile:(NSString *)mobile
 {
     if (mobile && mobile.length == 11 && [mobile characterAtIndex:0] == '1') {
         return YES;
@@ -44,7 +40,7 @@
 }
 
 /*车牌号验证 MODIFIED BY HELENSONG*/
-+(BOOL) validateCarNo:(NSString *)carNo
++ (BOOL)validateCarNo:(NSString *)carNo
 {
     NSString *carRegex = @"^[A-Za-z]{1}[A-Za-z_0-9]{5}$";
     NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];

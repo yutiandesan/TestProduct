@@ -48,8 +48,6 @@
     self.validateBtn.layer.masksToBounds = YES;
     [self.validateBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
     self.validateBtn.titleLabel.font = [UIFont fontWithName:nowFontName size:14];
-    [self.validateBtn setTitle:@"已发送(60s)" forState:UIControlStateSelected];
-    [self.validateBtn setTitleColor:viewColor forState:UIControlStateSelected];
     [self addSubview:self.validateBtn];
     
     self.validateLine = [[UIView alloc]initWithFrame:CGRectMake(10, 110, DeviceMaxWidth-20, 0.5)];

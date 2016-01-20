@@ -14,7 +14,7 @@
 /**
  *  获取验证码
  */
-+ (void)getValidate:(NSString *)phoneStr success:(void (^)(lhValidateCodeModel * user))success fail:(void (^)())fail;
++ (void)getValidate:(NSString *)phoneStr success:(void (^)(lhValidateCodeModel * user))success;
 
 /**
  *  电话号码验证

@@ -27,11 +27,9 @@
     nb.delegate = self;
     [self.view addSubview:nb];
     
-    [lhMainViewModel autoLoginSuccess:^(lhLoginModel *user) {
-        
-    } fail:^{
-        
-    }];
+//    [lhMainViewModel autoLoginSuccess:^(lhLoginModel *user) {
+//        
+//    }];
     
 }
 

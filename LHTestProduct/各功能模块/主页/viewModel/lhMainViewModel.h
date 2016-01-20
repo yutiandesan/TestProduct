@@ -17,7 +17,7 @@
 /**
  *  登录并获取数据
  */
-+ (void)autoLoginSuccess:(void (^)(lhLoginModel * user))success fail:(void (^)())fail;
++ (void)autoLoginSuccess:(void (^)(lhLoginModel * user))success;
 
 
 @end
