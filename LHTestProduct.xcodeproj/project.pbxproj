@@ -26,6 +26,24 @@
 		D06AE9241C48EE28008F6A8F /* lhLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9231C48EE28008F6A8F /* lhLoginView.m */; };
 		D06AE9271C48F4E2008F6A8F /* lhValidateCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9261C48F4E2008F6A8F /* lhValidateCodeModel.m */; };
 		D06AE92A1C48F683008F6A8F /* lhLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D06AE9291C48F683008F6A8F /* lhLoginViewModel.m */; };
+		D08FB4911C520D13003E04E4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4901C520D13003E04E4 /* CoreMotion.framework */; };
+		D08FB4931C520D1D003E04E4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4921C520D1D003E04E4 /* libc++.tbd */; };
+		D08FB4951C520D24003E04E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4941C520D24003E04E4 /* MobileCoreServices.framework */; };
+		D08FB4971C520D2B003E04E4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4961C520D2B003E04E4 /* CFNetwork.framework */; };
+		D08FB4991C520D33003E04E4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4981C520D33003E04E4 /* CoreText.framework */; };
+		D08FB49B1C520D3B003E04E4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB49A1C520D3B003E04E4 /* GLKit.framework */; };
+		D08FB49D1C520D43003E04E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB49C1C520D43003E04E4 /* Security.framework */; };
+		D08FB49F1C520D4B003E04E4 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB49E1C520D4B003E04E4 /* libz.1.2.5.tbd */; };
+		D08FB4A11C520D59003E04E4 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4A01C520D59003E04E4 /* libstdc++.6.0.9.tbd */; };
+		D08FB4A31C520D5F003E04E4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4A21C520D5F003E04E4 /* AddressBook.framework */; };
+		D08FB4A51C520D64003E04E4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4A41C520D64003E04E4 /* CoreTelephony.framework */; };
+		D08FB4A71C520D6D003E04E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4A61C520D6D003E04E4 /* SystemConfiguration.framework */; };
+		D08FB4A91C520D77003E04E4 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4A81C520D77003E04E4 /* libicucore.tbd */; };
+		D08FB4AB1C520D7E003E04E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4AA1C520D7E003E04E4 /* libz.tbd */; };
+		D08FB4AD1C520D85003E04E4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4AC1C520D85003E04E4 /* CoreMedia.framework */; };
+		D08FB4AF1C520D8C003E04E4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4AE1C520D8C003E04E4 /* CoreVideo.framework */; };
+		D08FB4B11C520D91003E04E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4B01C520D91003E04E4 /* QuartzCore.framework */; };
+		D08FB4B31C520DA4003E04E4 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D08FB4B21C520DA3003E04E4 /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +98,24 @@
 		D06AE9261C48F4E2008F6A8F /* lhValidateCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhValidateCodeModel.m; sourceTree = "<group>"; };
 		D06AE9281C48F683008F6A8F /* lhLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhLoginViewModel.h; sourceTree = "<group>"; };
 		D06AE9291C48F683008F6A8F /* lhLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhLoginViewModel.m; sourceTree = "<group>"; };
+		D08FB4901C520D13003E04E4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D08FB4921C520D1D003E04E4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D08FB4941C520D24003E04E4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D08FB4961C520D2B003E04E4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D08FB4981C520D33003E04E4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D08FB49A1C520D3B003E04E4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D08FB49C1C520D43003E04E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D08FB49E1C520D4B003E04E4 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		D08FB4A01C520D59003E04E4 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		D08FB4A21C520D5F003E04E4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D08FB4A41C520D64003E04E4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D08FB4A61C520D6D003E04E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D08FB4A81C520D77003E04E4 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		D08FB4AA1C520D7E003E04E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D08FB4AC1C520D85003E04E4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D08FB4AE1C520D8C003E04E4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D08FB4B01C520D91003E04E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D08FB4B21C520DA3003E04E4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +123,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08FB4B31C520DA4003E04E4 /* libiconv.tbd in Frameworks */,
+				D08FB4B11C520D91003E04E4 /* QuartzCore.framework in Frameworks */,
+				D08FB4AF1C520D8C003E04E4 /* CoreVideo.framework in Frameworks */,
+				D08FB4AD1C520D85003E04E4 /* CoreMedia.framework in Frameworks */,
+				D08FB4AB1C520D7E003E04E4 /* libz.tbd in Frameworks */,
+				D08FB4A91C520D77003E04E4 /* libicucore.tbd in Frameworks */,
+				D08FB4A71C520D6D003E04E4 /* SystemConfiguration.framework in Frameworks */,
+				D08FB4A51C520D64003E04E4 /* CoreTelephony.framework in Frameworks */,
+				D08FB4A31C520D5F003E04E4 /* AddressBook.framework in Frameworks */,
+				D08FB4A11C520D59003E04E4 /* libstdc++.6.0.9.tbd in Frameworks */,
+				D08FB49F1C520D4B003E04E4 /* libz.1.2.5.tbd in Frameworks */,
+				D08FB49D1C520D43003E04E4 /* Security.framework in Frameworks */,
+				D08FB49B1C520D3B003E04E4 /* GLKit.framework in Frameworks */,
+				D08FB4991C520D33003E04E4 /* CoreText.framework in Frameworks */,
+				D08FB4971C520D2B003E04E4 /* CFNetwork.framework in Frameworks */,
+				D08FB4951C520D24003E04E4 /* MobileCoreServices.framework in Frameworks */,
+				D08FB4931C520D1D003E04E4 /* libc++.tbd in Frameworks */,
+				D08FB4911C520D13003E04E4 /* CoreMotion.framework in Frameworks */,
 				40EDC9CB8BF210B1A62E4ECD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +381,24 @@
 		FE1E3B5C3D34129EA959C069 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D08FB4B21C520DA3003E04E4 /* libiconv.tbd */,
+				D08FB4B01C520D91003E04E4 /* QuartzCore.framework */,
+				D08FB4AE1C520D8C003E04E4 /* CoreVideo.framework */,
+				D08FB4AC1C520D85003E04E4 /* CoreMedia.framework */,
+				D08FB4AA1C520D7E003E04E4 /* libz.tbd */,
+				D08FB4A81C520D77003E04E4 /* libicucore.tbd */,
+				D08FB4A61C520D6D003E04E4 /* SystemConfiguration.framework */,
+				D08FB4A41C520D64003E04E4 /* CoreTelephony.framework */,
+				D08FB4A21C520D5F003E04E4 /* AddressBook.framework */,
+				D08FB4A01C520D59003E04E4 /* libstdc++.6.0.9.tbd */,
+				D08FB49E1C520D4B003E04E4 /* libz.1.2.5.tbd */,
+				D08FB49C1C520D43003E04E4 /* Security.framework */,
+				D08FB49A1C520D3B003E04E4 /* GLKit.framework */,
+				D08FB4981C520D33003E04E4 /* CoreText.framework */,
+				D08FB4961C520D2B003E04E4 /* CFNetwork.framework */,
+				D08FB4941C520D24003E04E4 /* MobileCoreServices.framework */,
+				D08FB4921C520D1D003E04E4 /* libc++.tbd */,
+				D08FB4901C520D13003E04E4 /* CoreMotion.framework */,
 				18B8EF401B215CC4FC78AA7E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -588,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = LHTestProduct/PrefixHeader.pch;
 				INFOPLIST_FILE = LHTestProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -604,6 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = LHTestProduct/PrefixHeader.pch;
 				INFOPLIST_FILE = LHTestProduct/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

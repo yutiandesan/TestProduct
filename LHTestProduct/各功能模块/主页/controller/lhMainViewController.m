@@ -10,7 +10,9 @@
 #import "lhMainViewModel.h"
 #import "lhLoginViewController.h"
 
-@interface lhMainViewController ()<rightBtnDelegate>
+#import <LocalAuthentication/LocalAuthentication.h>
+
+@interface lhMainViewController ()<rightBtnDelegate,UITextViewDelegate>
 
 @end
 
@@ -31,11 +33,26 @@
 //        
 //    }];
     
+    UITextView * feedTextView = [[UITextView alloc]initWithFrame:CGRectMake(10, 100, 300, 80)];
+    feedTextView.delegate = self;
+    feedTextView.font = [UIFont fontWithName:nowFontName size:14];
+    [self.view addSubview:feedTextView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
 }
 
 - (void)rightBtnEvent
